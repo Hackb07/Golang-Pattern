@@ -2,14 +2,7 @@
 
 A collection of classic **number / alphabet / star pattern** problems written in Go while learning loops and nested loops.
 
-Each file is a standalone `package main` program, so run them one at a time:
-
-```bash
-go run main.go
-go run floyd_triangle.go
-```
-
-> ⚠️ Because every file declares `func main()`, they cannot all be built together in the same package. Use `go run <file>.go`.
+Every file is a standalone `package main` program, so each one is compiled and run separately.
 
 ## Problems
 
@@ -252,11 +245,11 @@ Each row restarts at `1` and grows by two numbers. The left padding is derived f
 widest row, so every row sits on the same centre axis.
 
 ```text
-         1
-       1 2 3
-     1 2 3 4 5
-   1 2 3 4 5 6 7
- 1 2 3 4 5 6 7 8 9
+        1
+      1 2 3
+    1 2 3 4 5
+  1 2 3 4 5 6 7
+1 2 3 4 5 6 7 8 9
 ```
 
 ### 18. Centered star pyramid — `centerd_Star_Pyramid.go`
@@ -307,11 +300,11 @@ The alphabet twin of problem 17: each row restarts at `A` and grows by two lette
 on the same axis.
 
 ```text
-         A
-       A B C
-     A B C D E
-   A B C D E F G
- A B C D E F G H I
+        A
+      A B C
+    A B C D E
+  A B C D E F G
+A B C D E F G H I
 ```
 
 ---

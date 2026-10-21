@@ -5,9 +5,8 @@ import "fmt"
 func main() {
 	const rows = 5
 
-	// The widest row holds 2*rows-1 letters, each printed as "<letter><space>".
-	// Its rendered width is therefore 2*(2*rows-1)-1 characters.
-	maxWidth := 4*rows - 3
+	// The widest row holds 2*rows-1 letters separated by single spaces.
+	maxWidth := 2*(2*rows-1) - 1
 
 	for i := 1; i <= rows; i++ {
 		count := 2*i - 1
@@ -18,7 +17,10 @@ func main() {
 			fmt.Print(" ")
 		}
 		for n := 0; n < count; n++ {
-			fmt.Printf(" %c", 'A'+n)
+			if n > 0 {
+				fmt.Print(" ")
+			}
+			fmt.Printf("%c", 'A'+n)
 		}
 		fmt.Println()
 	}
