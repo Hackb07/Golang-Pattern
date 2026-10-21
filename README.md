@@ -26,6 +26,15 @@ go run floyd_triangle.go
 | 9 | [`alternating_binary_square.go`](alternating_binary_square.go) | Alternating binary checkerboard square |
 | 10 | [`right_aligned_number_triangle.go`](right_aligned_number_triangle.go) | Right-aligned (pyramid) number triangle |
 | 11 | [`palindrome_number_triangle.go`](palindrome_number_triangle.go) | Palindrome number triangle |
+| 12 | [`continous_Alphabet_Triangle.go`](continous_Alphabet_Triangle.go) | Continuous alphabet triangle |
+| 13 | [`alternative_Number_Alphabet_Rows.go`](alternative_Number_Alphabet_Rows.go) | Alternating number / alphabet rows |
+| 14 | [`increasing_Starting_Number_triangle.go`](increasing_Starting_Number_triangle.go) | Increasing starting number triangle |
+| 15 | [`multiplication_Triangle.go`](multiplication_Triangle.go) | Multiplication triangle |
+| 16 | [`pascal_triangle.go`](pascal_triangle.go) | Pascal's triangle |
+| 17 | [`centered_number_pyramid.go`](centered_number_pyramid.go) | Centered number pyramid |
+| 18 | [`centerd_Star_Pyramid.go`](centerd_Star_Pyramid.go) | Centered star pyramid |
+| 19 | [`inverted_centered_star_pyramid.go`](inverted_centered_star_pyramid.go) | Inverted centered star pyramid |
+| 20 | [`full_Diamond.go`](full_Diamond.go) | Full diamond |
 
 ---
 
@@ -171,6 +180,123 @@ Each row counts up then back down, forming a palindrome, with left padding.
   32123
  4321234
 543212345
+```
+
+### 12. Continuous alphabet triangle — `continous_Alphabet_Triangle.go`
+
+A single running alphabet (`A`…`U`) spread across growing rows, one letter per cell.
+
+```text
+ A
+ B C
+ D E F
+ G H I J
+ K L M N O
+ P Q R S T U
+```
+
+### 13. Alternating number / alphabet rows — `alternative_Number_Alphabet_Rows.go`
+
+Rows alternate: even rows print numbers from a running counter, odd rows print letters.
+
+```text
+ A
+ 1 2
+ B C D
+ 3 4 5 6
+ E F G H I
+```
+
+### 14. Increasing starting number triangle — `increasing_Starting_Number_triangle.go`
+
+Each row starts one higher than the previous and counts up.
+
+```text
+ 1
+ 2 3
+ 3 4 5
+ 4 5 6 7
+ 5 6 7 8 9
+ 6 7 8 9 10 11
+```
+
+### 15. Multiplication triangle — `multiplication_Triangle.go`
+
+Row `i` prints the multiples of `i` from `i` up to `i × i`.
+
+```text
+ 1
+ 2 4
+ 3 6 9
+ 4 8 12 16
+ 5 10 15 20 25
+ 6 12 18 24 30 36
+```
+
+### 16. Pascal's triangle — `pascal_triangle.go`
+
+Binomial coefficients, built with the recurrence `val = val * (i - j) / j`.
+
+```text
+ 1
+ 1 1
+ 1 2 1
+ 1 3 3 1
+ 1 4 6 4 1
+```
+
+### 17. Centered number pyramid — `centered_number_pyramid.go`
+
+Numbers centered on each row, with leading padding.
+
+```text
+      1
+     1 2
+    1 2 3
+   1 2 3 4
+  1 2 3 4 5
+```
+
+### 18. Centered star pyramid — `centerd_Star_Pyramid.go`
+
+An odd number of stars per row, centered with left padding.
+
+```text
+         *
+       ***
+      *****
+     *******
+    *********
+   ***********
+  *************
+```
+
+### 19. Inverted centered star pyramid — `inverted_centered_star_pyramid.go`
+
+The centered star pyramid flipped vertically, shrinking from the top.
+
+```text
+ *********
+  *******
+   *****
+    ***
+     *
+```
+
+### 20. Full diamond — `full_Diamond.go`
+
+A centered star pyramid joined to its mirror image, forming a diamond.
+
+```text
+     *
+    ***
+   *****
+  *******
+ *********
+  *******
+   *****
+    ***
+     *
 ```
 
 ---
