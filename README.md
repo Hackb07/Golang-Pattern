@@ -35,6 +35,7 @@ go run floyd_triangle.go
 | 18 | [`centerd_Star_Pyramid.go`](centerd_Star_Pyramid.go) | Centered star pyramid |
 | 19 | [`inverted_centered_star_pyramid.go`](inverted_centered_star_pyramid.go) | Inverted centered star pyramid |
 | 20 | [`full_Diamond.go`](full_Diamond.go) | Full diamond |
+| 21 | [`centered_alphabet_pyramid.go`](centered_alphabet_pyramid.go) | Centered alphabet pyramid |
 
 ---
 
@@ -247,14 +248,15 @@ Binomial coefficients, built with the recurrence `val = val * (i - j) / j`.
 
 ### 17. Centered number pyramid — `centered_number_pyramid.go`
 
-Numbers centered on each row, with leading padding.
+Each row restarts at `1` and grows by two numbers. The left padding is derived from the
+widest row, so every row sits on the same centre axis.
 
 ```text
-      1
-     1 2
-    1 2 3
-   1 2 3 4
-  1 2 3 4 5
+         1
+       1 2 3
+     1 2 3 4 5
+   1 2 3 4 5 6 7
+ 1 2 3 4 5 6 7 8 9
 ```
 
 ### 18. Centered star pyramid — `centerd_Star_Pyramid.go`
@@ -297,6 +299,19 @@ A centered star pyramid joined to its mirror image, forming a diamond.
    *****
     ***
      *
+```
+
+### 21. Centered alphabet pyramid — `centered_alphabet_pyramid.go`
+
+The alphabet twin of problem 17: each row restarts at `A` and grows by two letters, centred
+on the same axis.
+
+```text
+         A
+       A B C
+     A B C D E
+   A B C D E F G
+ A B C D E F G H I
 ```
 
 ---
