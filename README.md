@@ -4,33 +4,81 @@ A collection of classic **number / alphabet / star pattern** problems written in
 
 Every file is a standalone `package main` program, so each one is compiled and run separately.
 
+## Learning plan
+
+| Day | Topics | Status |
+|---|---|---|
+| Day 1 | Basic number and alphabet patterns | Covered |
+| Day 2 | Binary patterns, alignment, and palindromes | Covered |
+| Day 3 | Advanced number sequences and Pascal's triangle | Covered |
+| **Day 4** | **Pyramids and centered patterns** | **Today's lesson** |
+| Day 5 | Hollow patterns | Upcoming |
+| Day 6 | Diamonds and butterfly patterns | Upcoming |
+| Day 7 onward | Advanced patterns and interview challenges | Upcoming |
+
+### Course flowchart
+
+```mermaid
+flowchart TD
+    S(["Start · Golang Pattern Problems"]) --> D1
+
+    D1["Day 1 · Basic number and alphabet patterns<br/>Problems 1-7"]
+    D2["Day 2 · Binary patterns, alignment, and palindromes<br/>Problems 8-11"]
+    D3["Day 3 · Advanced number sequences and Pascal's triangle<br/>Problems 12-16"]
+    D4["Day 4 · Pyramids and centered patterns<br/>Problems 17-21"]
+    D5["Day 5 · Hollow patterns"]
+    D6["Day 6 · Diamonds and butterfly patterns"]
+    D7["Day 7 onward · Advanced patterns and interview challenges"]
+
+    D1 --> D2
+    D2 --> D3
+    D3 --> D4
+    D4 --> D5
+    D5 --> D6
+    D6 --> D7
+
+    classDef done fill:#d3f9d8,stroke:#2f9e44,stroke-width:2px,color:#000
+    classDef today fill:#fff3bf,stroke:#f08c00,stroke-width:3px,color:#000
+    classDef todo fill:#f1f3f5,stroke:#868e96,color:#000
+    classDef start fill:#e7f5ff,stroke:#1971c2,stroke-width:2px,color:#000
+
+    class S start
+    class D1,D2,D3 done
+    class D4 today
+    class D5,D6,D7 todo
+```
+
+**Legend:** green = covered · yellow = today's lesson · grey = upcoming
+
 ## Problems
 
-| # | File | Pattern |
-|---|------|---------|
-| 1 | [`main.go`](main.go) | Right-angled star triangle |
-| 2 | [`repeated_number_triangle.go`](repeated_number_triangle.go) | Repeated number triangle |
-| 3 | [`descending_number_triangle.go`](descending_number_triangle.go) | Descending number triangle |
-| 4 | [`floyd_triangle.go`](floyd_triangle.go) | Floyd's triangle |
-| 5 | [`increasing_aplhabet_triangle.go`](increasing_aplhabet_triangle.go) | Increasing alphabet triangle |
-| 6 | [`repeated_alphabet_triangle.go`](repeated_alphabet_triangle.go) | Repeated alphabet triangle |
-| 7 | [`inverted_alphabet_triangle.go`](inverted_alphabet_triangle.go) | Inverted / constant alphabet triangle |
-| 8 | [`binary_triangle.go`](binary_triangle.go) | Binary (0/1) triangle |
-| 9 | [`alternating_binary_square.go`](alternating_binary_square.go) | Alternating binary checkerboard square |
-| 10 | [`right_aligned_number_triangle.go`](right_aligned_number_triangle.go) | Right-aligned (pyramid) number triangle |
-| 11 | [`palindrome_number_triangle.go`](palindrome_number_triangle.go) | Palindrome number triangle |
-| 12 | [`continous_Alphabet_Triangle.go`](continous_Alphabet_Triangle.go) | Continuous alphabet triangle |
-| 13 | [`alternative_Number_Alphabet_Rows.go`](alternative_Number_Alphabet_Rows.go) | Alternating number / alphabet rows |
-| 14 | [`increasing_Starting_Number_triangle.go`](increasing_Starting_Number_triangle.go) | Increasing starting number triangle |
-| 15 | [`multiplication_Triangle.go`](multiplication_Triangle.go) | Multiplication triangle |
-| 16 | [`pascal_triangle.go`](pascal_triangle.go) | Pascal's triangle |
-| 17 | [`centered_number_pyramid.go`](centered_number_pyramid.go) | Centered number pyramid |
-| 18 | [`centerd_Star_Pyramid.go`](centerd_Star_Pyramid.go) | Centered star pyramid |
-| 19 | [`inverted_centered_star_pyramid.go`](inverted_centered_star_pyramid.go) | Inverted centered star pyramid |
-| 20 | [`full_Diamond.go`](full_Diamond.go) | Full diamond |
-| 21 | [`centered_alphabet_pyramid.go`](centered_alphabet_pyramid.go) | Centered alphabet pyramid |
+| # | Day | File | Pattern |
+|---|-----|------|---------|
+| 1 | 1 | [`main.go`](main.go) | Right-angled star triangle |
+| 2 | 1 | [`repeated_number_triangle.go`](repeated_number_triangle.go) | Repeated number triangle |
+| 3 | 1 | [`descending_number_triangle.go`](descending_number_triangle.go) | Descending number triangle |
+| 4 | 1 | [`floyd_triangle.go`](floyd_triangle.go) | Floyd's triangle |
+| 5 | 1 | [`increasing_aplhabet_triangle.go`](increasing_aplhabet_triangle.go) | Increasing alphabet triangle |
+| 6 | 1 | [`repeated_alphabet_triangle.go`](repeated_alphabet_triangle.go) | Repeated alphabet triangle |
+| 7 | 1 | [`inverted_alphabet_triangle.go`](inverted_alphabet_triangle.go) | Inverted / constant alphabet triangle |
+| 8 | 2 | [`binary_triangle.go`](binary_triangle.go) | Binary (0/1) triangle |
+| 9 | 2 | [`alternating_binary_square.go`](alternating_binary_square.go) | Alternating binary checkerboard square |
+| 10 | 2 | [`right_aligned_number_triangle.go`](right_aligned_number_triangle.go) | Right-aligned (pyramid) number triangle |
+| 11 | 2 | [`palindrome_number_triangle.go`](palindrome_number_triangle.go) | Palindrome number triangle |
+| 12 | 3 | [`continous_Alphabet_Triangle.go`](continous_Alphabet_Triangle.go) | Continuous alphabet triangle |
+| 13 | 3 | [`alternative_Number_Alphabet_Rows.go`](alternative_Number_Alphabet_Rows.go) | Alternating number / alphabet rows |
+| 14 | 3 | [`increasing_Starting_Number_triangle.go`](increasing_Starting_Number_triangle.go) | Increasing starting number triangle |
+| 15 | 3 | [`multiplication_Triangle.go`](multiplication_Triangle.go) | Multiplication triangle |
+| 16 | 3 | [`pascal_triangle.go`](pascal_triangle.go) | Pascal's triangle |
+| 17 | 4 | [`centered_number_pyramid.go`](centered_number_pyramid.go) | Centered number pyramid |
+| 18 | 4 | [`centerd_Star_Pyramid.go`](centerd_Star_Pyramid.go) | Centered star pyramid |
+| 19 | 4 | [`inverted_centered_star_pyramid.go`](inverted_centered_star_pyramid.go) | Inverted centered star pyramid |
+| 20 | 4 | [`full_Diamond.go`](full_Diamond.go) | Full diamond |
+| 21 | 4 | [`centered_alphabet_pyramid.go`](centered_alphabet_pyramid.go) | Centered alphabet pyramid |
 
 ---
+
+## Day 1 — Basic number and alphabet patterns
 
 ### 1. Right-angled star triangle — `main.go`
 
@@ -126,6 +174,8 @@ Intended output (same starting letter on every row, rows shrinking):
  A
 ```
 
+## Day 2 — Binary patterns, alignment, and palindromes
+
 ### 8. Binary triangle — `binary_triangle.go`
 
 `1` and `0` alternating based on `(i+j) % 2`, in a triangle.
@@ -175,6 +225,8 @@ Each row counts up then back down, forming a palindrome, with left padding.
  4321234
 543212345
 ```
+
+## Day 3 — Advanced number sequences and Pascal's triangle
 
 ### 12. Continuous alphabet triangle — `continous_Alphabet_Triangle.go`
 
@@ -238,6 +290,8 @@ Binomial coefficients, built with the recurrence `val = val * (i - j) / j`.
  1 3 3 1
  1 4 6 4 1
 ```
+
+## Day 4 — Pyramids and centered patterns
 
 ### 17. Centered number pyramid — `centered_number_pyramid.go`
 
