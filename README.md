@@ -49,7 +49,7 @@ flowchart TD
     class D7 todo
 ```
 
-**Legend:** green = covered · yellow = today's lesson · grey = upcoming
+**Legend:** green = covered · grey = upcoming
 
 ## Problems
 
@@ -139,7 +139,7 @@ Consecutive natural numbers filling successive rows.
 
 ### 5. Increasing alphabet triangle — `increasing_aplhabet_triangle.go`
 
-Continuous run of alphabets, starting over from `A`'s sequence and incrementing across the whole triangle.
+Continuous run of letters, incrementing across the whole triangle without restarting each row.
 
 ```text
 A
@@ -165,20 +165,9 @@ F F F F F F
 
 ### 7. Inverted / constant alphabet triangle — `inverted_alphabet_triangle.go`
 
-> 🐛 **Currently broken.** The outer loop is written as `for i := 0; i <= 5; i--`, so `i` only
-> decreases and the loop never terminates. It also prints the rune with `fmt.Print`, which
-> outputs the numeric value `65` instead of the character `A`. Intended output below.
-
-Intended output (same starting letter on every row, rows shrinking):
-
-```text
- A A A A A A
- A A A A A
- A A A A
- A A A
- A A
- A
-```
+The intended shape is a shrinking triangle that repeats `A` on each row. The current program
+does not produce that pattern: its outer loop decrements from zero while testing `i <= 5`, so
+it never terminates, and `fmt.Print` formats the rune as the number `65`.
 
 ## Day 2 — Binary patterns, alignment, and palindromes
 
@@ -365,6 +354,77 @@ on the same axis.
     A B C D E
   A B C D E F G
 A B C D E F G H I
+```
+
+## Day 5 — Hollow patterns
+
+These patterns print stars along their borders and spaces through their interiors.
+
+### 22. Hollow right triangle — `hollow_right_Triangle.go`
+
+Prints the left and right edges, plus the bottom edge, of a right triangle.
+
+```text
+*
+**
+* *
+*  *
+*   *
+******
+```
+
+### 23. Hollow square — `hollow_square.go`
+
+Prints a square with a solid star border.
+
+```text
+******
+*    *
+*    *
+*    *
+*    *
+******
+```
+
+### 24. Hollow rectangle — `hollow_rectangle.go`
+
+Prints a six-row by three-column rectangle with a solid star border.
+
+```text
+***
+* *
+* *
+* *
+* *
+***
+```
+
+### 25. Hollow pyramid — `hollow_pyramid.go`
+
+Prints the two sloping edges and a solid base.
+
+```text
+    *
+   * *
+  *   *
+ *     *
+*********
+```
+
+### 26. Hollow diamond — `hollow_diamond.go`
+
+Prints a hollow diamond with a single star at the top and bottom.
+
+```text
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
 ```
 
 ---
