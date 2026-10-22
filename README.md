@@ -11,8 +11,8 @@ Every file is a standalone `package main` program, so each one is compiled and r
 | Day 1 | Basic number and alphabet patterns | Covered |
 | Day 2 | Binary patterns, alignment, and palindromes | Covered |
 | Day 3 | Advanced number sequences and Pascal's triangle | Covered |
-| **Day 4** | **Pyramids and centered patterns** | **Today's lesson** |
-| Day 5 | Hollow patterns | Upcoming |
+| Day 4 | Pyramids and centered patterns | Covered |
+| **Day 5** | **Hollow patterns** | **Today's lesson** |
 | Day 6 | Diamonds and butterfly patterns | Upcoming |
 | Day 7 onward | Advanced patterns and interview challenges | Upcoming |
 
@@ -43,9 +43,9 @@ flowchart TD
     classDef start fill:#e7f5ff,stroke:#1971c2,stroke-width:2px,color:#000
 
     class S start
-    class D1,D2,D3 done
-    class D4 today
-    class D5,D6,D7 todo
+    class D1,D2,D3,D4 done
+    class D5 today
+    class D6,D7 todo
 ```
 
 **Legend:** green = covered · yellow = today's lesson · grey = upcoming
