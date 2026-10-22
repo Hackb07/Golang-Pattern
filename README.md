@@ -427,6 +427,67 @@ Prints a hollow diamond with a single star at the top and bottom.
     *
 ```
 
+## Day 5 — Hollow patterns
+
+### 22. Hollow rectangle — `hollow_rectangle.go`
+
+```text
+******
+*    *
+***
+```
+*(example shown with l=6, b=3)*
+
+### 23. Hollow square — `hollow_square.go`
+
+```text
+******
+*    *
+*    *
+*    *
+*    *
+*    *
+******
+```
+*(example shown with n=5)*
+
+### 24. Hollow right-angled triangle — `hollow_right_Triangle.go`
+
+```text
+*
+**
+* *
+*  *
+*****
+```
+*(example shown with n=5)*
+
+### 25. Hollow pyramid — `hollow_pyramid.go`
+
+```text
+    *
+   * *
+  *   *
+ *     *
+*********
+```
+*(example shown with n=5)*
+
+### 26. Hollow diamond — `hollow_diamond.go`
+
+```text
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+```
+*(example shown with n=5)*
+
 ---
 
 ## Concepts practised
@@ -435,3 +496,4 @@ Prints a hollow diamond with a single star at the top and bottom.
 - Loop-controlled vs. counter-controlled iteration
 - `fmt.Print` / `fmt.Println` / `fmt.Printf` formatting
 - Arithmetic (`%`) and character (`'A'`) manipulation
+- Boundary conditions for hollow patterns
