@@ -12,8 +12,8 @@ Every file is a standalone `package main` program, so each one is compiled and r
 | Day 2 | Binary patterns, alignment, and palindromes | Covered |
 | Day 3 | Advanced number sequences and Pascal's triangle | Covered |
 | Day 4 | Pyramids and centered patterns | Covered |
-| **Day 5** | **Hollow patterns** | **Today's lesson** |
-| Day 6 | Diamonds and butterfly patterns | Upcoming |
+| Day 5 | Hollow patterns | Covered |
+| **Day 6** | **More pattern challenges** | **Today's lesson** |
 | Day 7 onward | Advanced patterns and interview challenges | Upcoming |
 
 ### Course flowchart
@@ -27,7 +27,7 @@ flowchart TD
     D3["Day 3 · Advanced number sequences and Pascal's triangle<br/>Problems 12-16"]
     D4["Day 4 · Pyramids and centered patterns<br/>Problems 17-21"]
     D5["Day 5 · Hollow patterns"]
-    D6["Day 6 · Diamonds and butterfly patterns"]
+    D6["Day 6 · More pattern challenges"]
     D7["Day 7 onward · Advanced patterns and interview challenges"]
 
     D1 --> D2
@@ -44,8 +44,9 @@ flowchart TD
 
     class S start
     class D1,D2,D3,D4 done
-    class D5 today
-    class D6,D7 todo
+    class D5 done
+    class D6 today
+    class D7 todo
 ```
 
 **Legend:** green = covered · yellow = today's lesson · grey = upcoming
@@ -75,6 +76,11 @@ flowchart TD
 | 19 | 4 | [`inverted_centered_star_pyramid.go`](inverted_centered_star_pyramid.go) | Inverted centered star pyramid |
 | 20 | 4 | [`full_Diamond.go`](full_Diamond.go) | Full diamond |
 | 21 | 4 | [`centered_alphabet_pyramid.go`](centered_alphabet_pyramid.go) | Centered alphabet pyramid |
+| 22 | 5 | [`hollow_right_Triangle.go`](hollow_right_Triangle.go) | Hollow right triangle |
+| 23 | 5 | [`hollow_square.go`](hollow_square.go) | Hollow square |
+| 24 | 5 | [`hollow_rectangle.go`](hollow_rectangle.go) | Hollow rectangle |
+| 25 | 5 | [`hollow_pyramid.go`](hollow_pyramid.go) | Hollow pyramid |
+| 26 | 5 | [`hollow_diamond.go`](hollow_diamond.go) | Hollow diamond |
 
 ---
 
