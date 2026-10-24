@@ -528,3 +528,72 @@ C1D
 E1F3
 G1H3I
 ```
+
+
+## Day 7 — Advanced interview patterns
+
+### 29. Zigzag star pattern — `zigzag_Star_Pattern.go`
+
+Zigzag star pattern with three rows.
+
+```text
+*   *   *
+ * * * * *
+  *   *
+```
+
+### 30. Binary diamond — `binary_Diamond.go`
+
+Centered binary diamond pattern.
+
+```text
+      1
+    1 0 1
+  1 0 1 0 1
+1 0 1 0 1 0 1
+  1 0 1 0 1
+    1 0 1
+      1
+```
+
+### 31. Number butterfly — `number_Butterfly.go`
+
+Symmetric butterfly pattern using numbers.
+
+```text
+1      1
+12    21
+123  321
+12344321
+123  321
+12    21
+1      1
+```
+
+### 32. Hollow hourglass — `hollow_hourglass.go`
+
+Hollow hourglass pattern.
+
+```text
+*       *
+ *     *
+  *   *
+   * *
+    *
+   * *
+  *   *
+ *     *
+*       *
+```
+
+### 33. Mixed alphabet-number triangle — `mixed_alphabet_number_triangle.go`
+
+Mixed alphabet and number pattern.
+
+```text
+A
+B1
+C1D
+E1F3
+G1H3I
+```
