@@ -497,3 +497,34 @@ Prints a hollow diamond with a single star at the top and bottom.
 - `fmt.Print` / `fmt.Println` / `fmt.Printf` formatting
 - Arithmetic (`%`) and character (`'A'`) manipulation
 - Boundary conditions for hollow patterns
+
+
+## Day 6 — More pattern challenges
+
+### 27. Hollow hourglass — `hollow_hourglass.go`
+
+Hollow hourglass pattern.
+
+```text
+*       *
+ *     *
+  *   *
+   * *
+    *
+   * *
+  *   *
+ *     *
+*       *
+```
+
+### 28. Mixed alphabet-number triangle — `mixed_alphabet_number_triangle.go`
+
+Alternating alphabet and number in each row starting from A.
+
+```text
+A
+B1
+C1D
+E1F3
+G1H3I
+```
